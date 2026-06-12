@@ -1,6 +1,8 @@
 import "./Projects.css";
 import ProjectsCarousel from "./Components/ProjectsCarousel";
 
+const logoPjMoveis = new URL("../../assets/images/logo-pjmoveis.jpg", import.meta.url).href;
+
 const Projects = () => {
   const categorias = [
     {
@@ -12,7 +14,7 @@ const Projects = () => {
         {
           id: 1,
           nome: "Mesa Industrial Kraft",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "1.250,00",
           largura: 120,
           altura: 75,
@@ -21,7 +23,7 @@ const Projects = () => {
         {
           id: 2,
           nome: "Estante Metálica Pro",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "980,00",
           largura: 100,
           altura: 180,
@@ -30,7 +32,7 @@ const Projects = () => {
         {
           id: 5,
           nome: "Cadeira Operacional Steel",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "450,00",
           largura: 60,
           altura: 110,
@@ -39,7 +41,7 @@ const Projects = () => {
         {
           id: 6,
           nome: "Armário Multiuso Iron",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "1.100,00",
           largura: 90,
           altura: 200,
@@ -56,7 +58,7 @@ const Projects = () => {
         {
           id: 3,
           nome: "Estante Loft",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "750,00",
           largura: 80,
           altura: 160,
@@ -65,7 +67,7 @@ const Projects = () => {
         {
           id: 4,
           nome: "Mesa de Jantar Factory",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "1.500,00",
           largura: 150,
           altura: 75,
@@ -74,7 +76,7 @@ const Projects = () => {
         {
           id: 5,
           nome: "Cadeira Operacional Steel",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "450,00",
           largura: 60,
           altura: 110,
@@ -83,7 +85,7 @@ const Projects = () => {
         {
           id: 6,
           nome: "Armário Multiuso Iron",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "1.100,00",
           largura: 90,
           altura: 200,

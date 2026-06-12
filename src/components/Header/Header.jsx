@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
 import './header.css';
 
+const logoTransparente = new URL('../../assets/images/logo-transparente.png', import.meta.url).href;
+
 function Header() {
   return (
     <header className='cabecalho'>
         <div>
             <Link className='cabecalho-logo' to="/">
-              <img src='src/assets/images/logo-transparente.png' alt="" />
+              <img src={logoTransparente} alt="" />
             </Link>
         </div>
         <Link className='cabecalho-op' to="/">Início</Link>

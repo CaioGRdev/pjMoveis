@@ -10,9 +10,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./home.css";
 
-import produto1 from "../../assets/images/logo-pjmoveis.jpg";
-import produto2 from "../../assets/images/logo-pjmoveis.jpg";
-import produto3 from "../../assets/images/logo-pjmoveis.jpg";
+const logoPjMoveis = new URL("../../assets/images/logo-pjmoveis.jpg", import.meta.url).href;
+
+const produto1 = logoPjMoveis;
+const produto2 = logoPjMoveis;
+const produto3 = logoPjMoveis;
 
 const listaProdutos = [
   {
@@ -31,19 +33,19 @@ const listaProdutos = [
 const slides = [
   {
     id: 1,
-    image: "/images/logo-pjmoveis.jpg",
+    image: logoPjMoveis,
     title: "Qualidade e Sofisticação",
     subtitle: "Móveis planejados para transformar seu ambiente",
   },
   {
     id: 2,
-    image: "/images/imGenerica2.avif",
+    image: `${import.meta.env.BASE_URL}images/imGenerica2.avif`,
     title: "Design Moderno",
     subtitle: "Funcionalidade e beleza em cada detalhe",
   },
   {
     id: 3,
-    image: "/images/imGenerica3.jpg",
+    image: `${import.meta.env.BASE_URL}images/imGenerica3.jpg`,
     title: "Seu sonho, nossa missão",
     subtitle: "Projetos personalizados para você",
   },

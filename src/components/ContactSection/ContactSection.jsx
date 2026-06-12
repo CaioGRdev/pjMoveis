@@ -12,12 +12,12 @@ function ContactSection() {
 
                 <div className="home-contato-formas">
                     <a href="https://whatsapp.com" className="contato-item">
-                        <img src="/images/WhatsApp_icon.png" alt="WhatsApp" />
+                        <img src={`${import.meta.env.BASE_URL}images/WhatsApp_icon.png`} alt="WhatsApp" />
                         <span>999999</span>
                     </a>
 
                     <a href="https://instagram.com" className="contato-item">
-                        <img src="/images/instagram.svg.png" alt="Instagram" />
+                        <img src={`${import.meta.env.BASE_URL}images/instagram.svg.png`} alt="Instagram" />
                         <span>@pjmoveis</span>
                     </a>
                 </div>

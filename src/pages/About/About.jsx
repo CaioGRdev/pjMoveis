@@ -1,6 +1,8 @@
 import "./About.css";
 import ContactSection from "../../components/ContactSection/ContactSection";
 
+const logoPjMoveis = new URL("../../assets/images/logo-pjmoveis.jpg", import.meta.url).href;
+
 const About = () => {
   const mvv = [
     {
@@ -22,7 +24,7 @@ const About = () => {
       {/* Header com Logo */}
       <nav className="about-nav">
         <div className="mini-logo">
-          <img src="src/assets/images/logo-pjmoveis.jpg" alt="" />
+          <img src={logoPjMoveis} alt="" />
         </div>
         <div className="line-decorative"></div>
       </nav>
@@ -79,7 +81,7 @@ const About = () => {
         <div className="history-grid">
           <div className="history-image">
             <div className="image-box">
-              <img src="src/assets/images/logo-pjmoveis.jpg" alt="" />
+              <img src={logoPjMoveis} alt="" />
             </div>
           </div>
           <div className="history-text">
@@ -118,7 +120,7 @@ const About = () => {
           </div>
           <div className="more-about-image">
             <div className="image-box">
-              <img src="src/assets/images/logo-pjmoveis.jpg" alt="" />
+              <img src={logoPjMoveis} alt="" />
             </div>
           </div>
         </div>
