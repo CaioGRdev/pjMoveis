@@ -10,42 +10,36 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./home.css";
 
-const logoPjMoveis = new URL("../../assets/images/logo-pjmoveis.jpg", import.meta.url).href;
-
-const produto1 = logoPjMoveis;
-const produto2 = logoPjMoveis;
-const produto3 = logoPjMoveis;
-
 const listaProdutos = [
   {
-    img: produto1,
-    title: "Móveis Industriais",
+    img: "/moveis/cadeira01.png",
   },
   {
-    img: produto2,
-    title: "Estruturas Metálicas",
+    img: "/moveis/CABECEIRA.png",
   },
   {
-    img: produto3,
-    title: "Projetos Sob Medida",
+    img: "/moveis/estante.png",
+  },
+  {
+    img: "/moveis/APARADOR.png",
   },
 ];
 const slides = [
   {
     id: 1,
-    image: logoPjMoveis,
+    image: "/moveis/armario.png",
     title: "Qualidade e Sofisticação",
     subtitle: "Móveis planejados para transformar seu ambiente",
   },
   {
     id: 2,
-    image: `${import.meta.env.BASE_URL}images/imGenerica2.avif`,
+    image: "/moveis/mesaJantar.png",
     title: "Design Moderno",
     subtitle: "Funcionalidade e beleza em cada detalhe",
   },
   {
     id: 3,
-    image: `${import.meta.env.BASE_URL}images/imGenerica3.jpg`,
+    image: "/moveis/BUFFET_02.png",
     title: "Seu sonho, nossa missão",
     subtitle: "Projetos personalizados para você",
   },
@@ -89,7 +83,7 @@ function Home() {
           className="home-produtos-carousel"
           listaProdutos={listaProdutos}
         />
-        <Link to="/produtos" className="home-produtos-button">
+        <Link to="/projetos" className="home-produtos-button">
           Ver Todos os Produtos
         </Link>
       </section>

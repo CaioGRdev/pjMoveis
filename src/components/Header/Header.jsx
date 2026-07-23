@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import './header.css';
 
 const logoTransparente = new URL('../../assets/images/logo-transparente.png', import.meta.url).href;
@@ -11,9 +11,11 @@ function Header() {
               <img src={logoTransparente} alt="" />
             </Link>
         </div>
-        <Link className='cabecalho-op' to="/">Início</Link>
-        <Link className='cabecalho-op' to="/about">Sobre Nós</Link>
-        <Link className='cabecalho-op' to="/projetos">Projetos</Link>
+        <nav className="cabecalho-menu">
+          <NavLink className={({ isActive }) => isActive ? "cabecalho-op ativo" : "cabecalho-op"} to="/">Início</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "cabecalho-op ativo" : "cabecalho-op"} to="/about">Sobre Nós</NavLink>
+          <NavLink className={({ isActive }) => isActive ? "cabecalho-op ativo" : "cabecalho-op"} to="/projetos">Projetos</NavLink>
+        </nav>
     </header>
   );
 }
