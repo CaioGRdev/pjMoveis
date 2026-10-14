@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './header.css';
 
 const logoTransparente = new URL('../../assets/images/logo-transparente.png', import.meta.url).href;

@@ -3,6 +3,7 @@ import ProjectsCarousel from "./Components/ProjectsCarousel";
 import ContactSection from "../../components/ContactSection/ContactSection";
 
 const logoPjMoveis = new URL("../../assets/images/logo-pjmoveis.jpg", import.meta.url).href;
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 const Projects = () => {
   const categorias = [
@@ -15,7 +16,7 @@ const Projects = () => {
         {
           id: 1,
           nome: "Mesa Industrial Kraft",
-          img: "mobCorporativo1.jpg",
+          img: publicAsset("mobCorporativo1.jpg"),
           preco: "1.250,00",
           largura: 120,
           altura: 75,
@@ -24,7 +25,7 @@ const Projects = () => {
         {
           id: 2,
           nome: "Mesa Madeira Pro",
-          img: "mobCorporativo2.png",
+          img: publicAsset("mobCorporativo2.png"),
           preco: "980,00",
           largura: 100,
           altura: 180,
@@ -33,7 +34,7 @@ const Projects = () => {
         {
           id: 3,
           nome: "Cadeira Operacional Steel",
-          img: "mobCorporativo3.png",
+          img: publicAsset("mobCorporativo3.png"),
           preco: "450,00",
           largura: 60,
           altura: 110,
@@ -50,7 +51,7 @@ const Projects = () => {
         {
           id: 4,
           nome: "Armário Loft",
-          img: "mobIndustrial.png",
+          img: publicAsset("mobIndustrial.png"),
           preco: "750,00",
           largura: 80,
           altura: 160,
@@ -59,7 +60,7 @@ const Projects = () => {
         {
           id: 5,
           nome: "Bancada Factory",
-          img: "mobIndustrial2.png",
+          img: publicAsset("mobIndustrial2.png"),
           preco: "1.500,00",
           largura: 150,
           altura: 75,
@@ -68,7 +69,7 @@ const Projects = () => {
         {
           id: 6,
           nome: "cabeceira de cama",
-          img: "mobIndustrial3.png",
+          img: publicAsset("mobIndustrial3.png"),
           preco: "450,00",
           largura: 60,
           altura: 110,
@@ -77,7 +78,7 @@ const Projects = () => {
         {
           id: 7,
           nome: "Estante Multiuso Iron",
-          img: "mobIndustrial4.png",
+          img: publicAsset("mobIndustrial4.png"),
           preco: "1.100,00",
           largura: 90,
           altura: 200,
@@ -94,7 +95,7 @@ const Projects = () => {
         {
           id: 8,
           nome: "Domo",
-          img: "/domo.jpg",
+          img: publicAsset("domo.jpg"),
           preco: "1.250,00",
           largura: 120,
           altura: 75,
@@ -103,7 +104,7 @@ const Projects = () => {
         {
           id: 9,
           nome: "Estante Metálica Pro",
-          img: "src/assets/images/logo-pjmoveis.jpg",
+          img: logoPjMoveis,
           preco: "980,00",
           largura: 100,
           altura: 180,

@@ -2,6 +2,7 @@ import "./About.css";
 import ContactSection from "../../components/ContactSection/ContactSection";
 
 const logoPjMoveis = new URL("../../assets/images/logo-pjmoveis.jpg", import.meta.url).href;
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 const About = () => {
   const mvv = [
@@ -36,7 +37,7 @@ const About = () => {
         <div className="hero-main-image">
           {/* Imagem grande de um projeto icônico */}
           <div className="image-placeholder-large">
-            <img src="/domo.jpg" alt="Projeto icônico" />
+            <img src={publicAsset("domo.jpg")} alt="Projeto icônico" />
           </div>
           <div className="hero-experience-badge">INOVAÇÃO E DEDICAÇÃO</div>
         </div>
@@ -81,7 +82,7 @@ const About = () => {
         <div className="history-grid">
           <div className="history-image">
             <div className="image-box">
-              <img src="/moveis/BUFFET_02.png" alt="" />
+              <img src={publicAsset("moveis/BUFFET_02.png")} alt="" />
             </div>
           </div>
           <div className="history-text">

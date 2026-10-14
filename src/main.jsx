@@ -12,7 +12,7 @@ import Contact from "./components/Contact/Contact.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Header />
       <Routes>
         <Route index element={<Home />} />

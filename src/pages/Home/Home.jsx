@@ -10,36 +10,38 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./home.css";
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const listaProdutos = [
   {
-    img: "/moveis/cadeira01.png",
+    img: publicAsset("moveis/cadeira01.png"),
   },
   {
-    img: "/moveis/CABECEIRA.png",
+    img: publicAsset("moveis/CABECEIRA.png"),
   },
   {
-    img: "/moveis/estante.png",
+    img: publicAsset("moveis/estante.png"),
   },
   {
-    img: "/moveis/APARADOR.png",
+    img: publicAsset("moveis/APARADOR.png"),
   },
 ];
 const slides = [
   {
     id: 1,
-    image: "/moveis/armario.png",
+    image: publicAsset("moveis/armario.png"),
     title: "Qualidade e Sofisticação",
     subtitle: "Móveis planejados para transformar seu ambiente",
   },
   {
     id: 2,
-    image: "/moveis/mesaJantar.png",
+    image: publicAsset("moveis/mesaJantar.png"),
     title: "Design Moderno",
     subtitle: "Funcionalidade e beleza em cada detalhe",
   },
   {
     id: 3,
-    image: "/moveis/BUFFET_02.png",
+    image: publicAsset("moveis/BUFFET_02.png"),
     title: "Seu sonho, nossa missão",
     subtitle: "Projetos personalizados para você",
   },
